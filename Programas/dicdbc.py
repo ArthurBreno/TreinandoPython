@@ -87,7 +87,6 @@ while True:
     if contador > 1 and iteradorRepecoes == repeticoes:
         iteradorTratamentos = iteradorTratamentos + 1
         iteradorRepecoes = 0
-        print("BUCETAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
     if contador > ((data.size/3)-2):
         break
     else:
