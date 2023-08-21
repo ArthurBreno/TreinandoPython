@@ -107,3 +107,10 @@ tukey = pairwise_tukeyhsd(endog=df['resultados'],
                           groups=df['tratamentos'],
                           alpha=0.05)
 print(tukey)
+# ---------------------------------------------------------------------------------------------------------
+# fatorial bdc
+data = pd.read_csv("exemplo_dbc_fatorial.csv")
+print(data)
+model = ols('resultado ~ C(bloco) + C(tratamento1)*C(tratamento2)', data=data).fit()
+result = sm.stats.anova_lm(model, type=2)
+print(result)
